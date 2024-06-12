@@ -1,0 +1,14 @@
+.DS_Store
+.idea
+.vscode
+target
+/release
+/workspace
+
+# python
+__pycache__
+.env
+/models
+/machine/workspace
+
+Writer.iml
