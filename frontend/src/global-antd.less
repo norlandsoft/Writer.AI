@@ -1,0 +1,278 @@
+//主页面导航菜单
+.air-menu-dark {
+  font-weight: 450;
+  background: transparent;
+
+  .air-menu-inline {
+    background: transparent !important;
+  }
+
+  .air-menu-item {
+    margin: 0 !important;
+    user-select: none;
+    font-size: var(--font-size);
+    font-weight: 450;
+    width: 100%;
+  }
+
+  .air-menu-item-selected {
+    background-color: #1565C0 !important;
+  }
+
+  .air-menu-submenu {
+    .air-menu-submenu-title {
+      margin: 0;
+      padding-left: 6px !important;
+      align-items: unset !important;
+      user-select: none;
+      font-weight: 450;
+      width: 100%;
+
+      .air-menu-title-content {
+        margin-inline-start: 12px !important;
+      }
+    }
+
+    ul {
+      padding: 0 14px 0 10px !important;
+
+      li {
+        padding-left: 41px !important;
+        border-radius: 3px !important;
+      }
+    }
+  }
+
+  .air-menu-submenu-selected {
+    .air-menu-submenu-title {
+      padding-left: 6px !important;
+    }
+  }
+}
+
+.air-menu-submenu-popup {
+  left: 50px !important;
+  border: 1px solid #ddd;
+  border-left: 1px solid #385f8f;
+  background: var(--primary-color);
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  padding-inline-start: 0;
+
+  .air-menu-vertical.air-menu-sub {
+    min-width: 150px;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    background: var(--primary-color);
+
+    .air-menu-item {
+      padding-left: 32px;
+      width: 100%;
+      border-radius: 0;
+    }
+  }
+}
+
+// tab页签右侧下拉菜单
+.air-tabs-dropdown .air-tabs-dropdown-menu {
+  border-radius: 3px;
+  min-width: 300px;
+  max-width: 300px;
+  border: 1px solid #ddd;
+
+  padding: 0;
+
+  li {
+    span div {
+      user-select: none;
+      height: 32px;
+      line-height: 32px;
+      width: 235px;
+      // 文字超出部分隐藏
+      overflow-x: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    button {
+      margin-left: 0;
+    }
+  }
+}
+
+// form表单
+.air-form {
+  .air-space-compact {
+    height: 40px;
+    line-height: 40px;
+    margin: 12px 0;
+  }
+
+  .air-form-item {
+    margin: 16px 0;
+  }
+
+  .air-form-item-label {
+    height: 40px;
+    line-height: 40px;
+
+    label {
+      font-family: var(--font-family);
+      font-size: var(--font-size-form);
+      font-weight: 450;
+      height: 40px;
+    }
+  }
+
+  .air-form-item-control-input-content {
+    // 设定input 和 textarea的属性
+    input {
+      font-family: var(--font-family);
+      border-color: var(--color-300);
+      border-radius: 3px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+
+      &:focus {
+        border-color: var(--primary-color);
+        box-shadow: unset;
+      }
+    }
+
+    .air-select {
+      font-family: var(--font-family);
+      height: 40px;
+
+      .air-select-selector {
+        border-radius: 3px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        border-color: var(--color-300);
+
+        &:hover {
+          border-color: var(--color-300) !important;
+          box-shadow: unset !important;
+        }
+      }
+    }
+
+    .air-select-focused .air-select-selector {
+      border-color: var(--color-300) !important;
+      box-shadow: unset !important;
+    }
+
+    textarea {
+      font-family: var(--font-family);
+      border-color: var(--color-300);
+      border-radius: 3px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+
+      &:focus {
+        border-color: var(--primary-color);
+        box-shadow: unset;
+      }
+    }
+
+    .air-input-affix-wrapper-focused {
+      border-color: var(--primary-color) !important;
+      box-shadow: unset;
+    }
+
+    //password
+    .air-input-affix-wrapper {
+      border-color: var(--color-300);
+      border-radius: 3px;
+      padding: 0 12px;
+      height: 40px;
+
+      input {
+        height: 38px;
+      }
+    }
+
+    //number
+    .air-input-number {
+      border-color: var(--color-300);
+      border-radius: 3px;
+      width: unset;
+      input {
+        height: 38px;
+      }
+    }
+
+    .air-input-number-focused {
+      border-color: var(--primary-color);
+      box-shadow: unset;
+    }
+
+    // radio
+    .air-radio-group {
+      label {
+        height: 40px;
+        line-height: 40px;
+      }
+    }
+
+    // slider
+    .air-slider {
+      .air-slider-track {
+        background-color: var(--color-300);
+      }
+
+      .air-slider-handle::after {
+        box-shadow: 0 0 0 2px var(--color-300);
+      }
+    }
+  }
+
+  .air-input-group-wrapper {
+    .air-input-group-addon {
+      border-radius: 2px 0 0 2px;
+
+      .air-select-selection-item {
+        font-size: 0.95rem;
+        font-weight: 450;
+      }
+
+      .air-select {
+        font-family: var(--font-family);
+      }
+    }
+
+    .air-input {
+      border-radius: 0 2px 2px 0;
+    }
+  }
+
+  input {
+    font-family: var(--font-family);
+    font-size: var(--font-size-form);
+    height: 40px;
+  }
+}
+
+.air-select-dropdown {
+  box-shadow: none;
+  border: 1px solid #ddd;
+  background: #fafafa;
+  border-radius: 2px;
+  padding: 0;
+
+  .air-select-item {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 12px;
+    font-family: var(--font-family);
+  }
+}
+
+// table表格
+.air-table {
+  .air-table-row-expand-icon {
+    border-radius: 3px;
+  }
+}
+
+// Message提示框
+.air-notice-wrapper .air-notice .air-notice-content {
+  border-radius: 3px;
+}

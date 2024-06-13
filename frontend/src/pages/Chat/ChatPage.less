@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  background: #f1f2f3;
+  font-family: IBMPlexMono, 'Microsoft YaHei', Consolas, Courier, monospace !important;
+
+  .history {
+    overflow: auto;
+  }
+
+  .content {
+    .input {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow: auto;
+      margin-top: 4px;
+    }
+  }
+
+  .toggle {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+
+    .toggleInner {
+      width: 18px;
+      height: 32px;
+      cursor: pointer;
+      transition-delay: 0.5s;
+    }
+  }
+}

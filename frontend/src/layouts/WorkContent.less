@@ -1,0 +1,29 @@
+.actionPanel {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  right: 0;
+  top: 40px;
+  width: 40px;
+  box-sizing: border-box;
+  border-left: 1px solid #ccc;
+  background-color: #f1f2f3;
+  padding-top: 8px;
+  z-index: 9999;
+
+  .actionItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 22px;
+    width: 22px;
+    padding: 6px;
+    border-radius: 5px;
+
+
+    &:hover {
+      background-color: #d1d2d3;
+    }
+  }
+}

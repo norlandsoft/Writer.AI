@@ -1,0 +1,40 @@
+.container {
+  // 固定在屏幕左侧，宽度为50px，上方留出41px的空间
+  position: fixed;
+  bottom: 0;
+  background-color: #f1f2f3;
+  -webkit-overflow-scrolling: touch;
+  z-index: 1000;
+  box-sizing: border-box;
+  border-right: 1px solid #ccc;
+  transition: all 0.3s;
+  user-select: none;
+  overflow: hidden;
+
+  .menu {
+    .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: #e7e7e7;
+      }
+
+      &.active {
+        background-color: #e7e7e7;
+      }
+
+      .selected {
+        position: absolute;
+        left: 3px;
+        height: 16px;
+        width: 3px;
+        border-radius: 3px;
+        background-color: #0D46A1;
+      }
+    }
+  }
+}

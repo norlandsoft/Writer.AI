@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  // 两列
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .left {
+    width: 200px;
+    background-color: rgb(250, 250, 250);
+    border-right: 1px solid #e8e8e8;
+  }
+
+  .content {
+    flex: 1;
+    padding: 0 20px;
+  }
+}

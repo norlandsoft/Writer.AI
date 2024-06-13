@@ -1,0 +1,10 @@
+# web
+fastapi
+python-multipart
+uvicorn
+requests
+bs4
+beautifulsoup4
+flask
+pydantic
+python-dotenv

@@ -1,0 +1,39 @@
+.container {
+
+  .top {
+    height: 125px;
+    background: #f5f5f5;
+    border-bottom: 1px solid #e8e8e8;
+
+    .title {
+      display: flex;
+      align-items: center;
+      padding: 24px 14px;
+      font-size: 1.2rem;
+      font-weight: 500;
+      gap: 12px;
+    }
+
+    .options {
+      display: flex;
+      padding: 0 12px;
+    }
+  }
+
+  .files {
+    overflow: auto;
+    .file {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      padding: 6px 12px;
+      gap: 12px;
+      border-bottom: 1px solid #e8e8e8;
+
+      .name {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.container {
+  // 上下分为两栏
+  display: flex;
+  flex-direction: column;
+
+  .toolbar {
+    // 固定在上一层顶端
+    flex: 1;
+    background-color: #fff;
+    z-index: 99;
+
+    display: flex;
+    // 左右分布
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+
+    .buttons {
+      // 右侧
+      padding-right: 12px;
+    }
+  }
+
+  .content {
+    overflow: auto;
+  }
+}

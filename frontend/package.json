@@ -1,0 +1,38 @@
+{
+  "name": "air-machine-ui",
+  "version": "1.0.0",
+  "description": "Air Machine UI",
+  "scripts": {
+    "start": "PORT=9000 max dev",
+    "build": "max build"
+  },
+  "dependencies": {
+    "@ant-design/pro-components": "^2.7.9",
+    "@douyinfe/semi-ui": "^2.59.1",
+    "@norlandsoft/tide": "^0.0.6",
+    "@norlandsoft/tide-starter-kit": "^0.0.6",
+    "@xterm/addon-fit": "^0.10.0",
+    "@xterm/xterm": "^5.5.0",
+    "antd": "^5.18.0",
+    "crypto-js": "^4.2.0",
+    "fs-extra": "^11.2.0",
+    "katex": "^0.16.10",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-markdown": "^9.0.1",
+    "react-style-proptype": "^3.2.2",
+    "react-syntax-highlighter": "^15.5.0",
+    "rehype-katex": "^7.0.0",
+    "remark-gfm": "^4.0.0",
+    "remark-math": "^6.0.0",
+    "rsuite-table": "^5.18.2",
+    "screenfull": "^6.0.2"
+  },
+  "devDependencies": {
+    "@types/crypto-js": "^4.2.2",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@umijs/max": "^4.2.10",
+    "typescript": "^5.4.5"
+  }
+}

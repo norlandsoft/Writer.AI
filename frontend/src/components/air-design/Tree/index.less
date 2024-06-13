@@ -1,0 +1,100 @@
+.container {
+  position: relative;
+  width: 100%;
+
+  .rootButton {
+    position: absolute;
+    top: 10px;
+    height: 40px;
+    background: transparent;
+    &:hover {
+      background: transparent;
+    }
+  }
+
+  .tree {
+    .node_icon {
+      width: 22px;
+      height: 32px;
+      float: left;
+      // 上下居中
+      display: flex;
+      align-items: center;
+    }
+
+    .label {
+      display: flex;
+      align-items: center;
+      height: 36px;
+      line-height: 36px;
+      user-select: none;
+
+      span {
+        width: calc(100% - 36px);
+
+        font-family: var(--font-family);
+        font-size: 0.95rem;
+      }
+
+      Button {
+        border: none;
+        background-color: transparent;
+        width: 0;
+        height: 20px;
+        visibility: hidden;
+        padding: 0!important;
+        span {
+          width: 20px;
+        }
+        svg {
+          font-size: 11px;
+          color: transparent;
+        }
+      }
+
+      Button:hover {
+        svg {
+          background-color: transparent;
+        }
+      }
+    }
+
+    .label:hover {
+      span {
+        width: calc(100% - 50px);
+      }
+      Button {
+        visibility: visible;
+        width: 20px;
+        background: #e1e2e3;
+        span {
+          width: 20px;
+        }
+        svg {
+          color: gray;
+        }
+      }
+    }
+
+    :global {
+      .semi-tree-search-wrapper {
+        padding: 8px 12px 8px 40px;
+
+        .semi-tree-input {
+          border: 1px solid #ddd;
+          height: 38px;
+        }
+      }
+      .semi-tree-option-list {
+        padding: 0;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+:global {
+  .semi-dropdown .semi-dropdown-content {
+    border-radius: 5px;
+  }
+}

@@ -1,0 +1,69 @@
+.bookmark-panel {
+  .bookmark-panel-toolbar {
+    background-color: #fafafa;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e8e8e8;
+
+    font-size: 1.1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+      display: flex;
+      align-items: center;
+      height: 32px;
+      gap: 12px;
+
+      &:hover {
+        svg g circle {
+          stroke-width: 1.5;
+        }
+        svg g path {
+          stroke-width: 1.5;
+        }
+      }
+    }
+  }
+
+  .bookmark-list {
+    .bookmark-list-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 40px;
+      padding: 0 20px;
+      border-bottom: 1px solid #e8e8e8;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #fafafa;
+      }
+
+      .bookmark-list-item-title {
+        // 不换行
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .bookmark-list-item-action {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 32px;
+        width: 32px;
+        line-height: 32px;
+        border-radius: 50%;
+
+        &:hover {
+          background-color: #e1e2e3;
+        }
+      }
+    }
+  }
+}
