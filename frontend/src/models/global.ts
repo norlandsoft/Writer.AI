@@ -11,7 +11,7 @@ export default {
       height: 0
     },
     actionPages: ['wiki', 'code', 'manage', 'link', 'load', 'ops'],
-    currentPage: 'chat',
+    currentPage: 'writer',
   },
   effects: {},
   reducers: {

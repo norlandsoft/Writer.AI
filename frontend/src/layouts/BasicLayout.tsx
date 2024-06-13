@@ -30,11 +30,6 @@ const BasicLayout: React.FC = (props: any) => {
       rtl: false,
     });
 
-    // 获取当前用户菜单
-    dispatch({
-      type: 'user/fetchUserMenu'
-    });
-
     // 监听窗口尺寸变化事件
     window.addEventListener('resize', handleWindowResize);
 

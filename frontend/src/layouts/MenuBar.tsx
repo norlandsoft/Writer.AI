@@ -26,10 +26,6 @@ const MenuBar: React.FC = (props: any) => {
     <div className={styles.container} style={{width: layoutSize.menuWidth, top: layoutSize.headerHeight}}>
       {
         userMenu.map(item => {
-          const currentUser = sessionStorage.getItem('air-user-id');
-          if (currentUser !== 'admin' && item.role === 'admin') {
-            return null;
-          }
           return (
             <Tooltip placement="right" title={item.title} arrow={false} mouseEnterDelay={0.2} mouseLeaveDelay={0}
                      destroyTooltipOnHide={true} overlayInnerStyle={{fontSize: 13, fontWeight: 600, borderRadius: 3}}

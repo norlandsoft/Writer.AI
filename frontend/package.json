@@ -1,9 +1,9 @@
 {
-  "name": "air-machine-ui",
+  "name": "air-writer-ui",
   "version": "1.0.0",
-  "description": "Air Machine UI",
+  "description": "Writer.AI",
   "scripts": {
-    "start": "PORT=9000 max dev",
+    "start": "PORT=6612 max dev",
     "build": "max build"
   },
   "dependencies": {

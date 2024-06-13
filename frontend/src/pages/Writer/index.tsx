@@ -2,12 +2,9 @@ import React from "react";
 import {connect} from 'umi';
 import {Splitter, Tree} from 'aird';
 
-import SimpleInfoDialog from '@/components/SimpleInfoDialog';
-
-import WorkContent from './WorkContent';
 import styles from './index.less';
 
-const Wiki: React.FC = (props: any) => {
+const Writer: React.FC = (props: any) => {
   
   const {
     dispatch,
@@ -60,26 +57,6 @@ const Wiki: React.FC = (props: any) => {
   ];
 
   const handleNewDocDialog = () => {
-    SimpleInfoDialog({
-      title: '新建文档',
-      nameLabel: '文档名称',
-      showParent: false,
-      parentLabel: '上级文档',
-      parentValue: '我的日常记录',
-      onConfirm: title => {
-        dispatch({
-          type: 'wiki/createDoc',
-          payload: {
-            title: title,
-            parent: '000000'
-          },
-          callback: data => {
-            console.log(data);
-            setDocId(data);
-          }
-        });
-      }
-    })
   }
 
   const handleDockItemClick = (item: any) => {
@@ -115,7 +92,7 @@ const Wiki: React.FC = (props: any) => {
         />
       </div>
       <div className={styles.content} style={{height: frameSize.height}}>
-        <WorkContent page={'doc'} docId={docId}/>
+        <div>Work</div>
       </div>
     </Splitter>
   );
@@ -123,4 +100,4 @@ const Wiki: React.FC = (props: any) => {
 
 export default connect(({global}) => ({
   frameSize: global.frameSize
-}))(Wiki);
+}))(Writer);
